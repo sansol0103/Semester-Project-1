@@ -1,1 +1,162 @@
-@import "imports/variables.css";
+@import url(variables.css);
+
+body {
+  margin: 0px;
+  display: grid;
+}
+
+/*Header*/
+header,
+footer {
+  background-color: var(--color-header-footer);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h1,
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  width: 250px;
+  top: 110px;
+  right: 0px;
+  background: var(--color-header-footer);
+  z-index: 10;
+}
+
+nav li {
+  padding: 10px 20px;
+  margin: 0px;
+  text-align: center;
+  display: block;
+  font-size: 1.6rem;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-family: "Raleway", "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fa-bars {
+  font-size: 3rem;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+/*Main*/
+
+main {
+  text-align: center;
+  margin: 50px auto;
+  font-family: var(--main-font);
+}
+
+img {
+  width: 300px;
+  height: 250px;
+  border-radius: 150px;
+  margin: 20px auto;
+  object-fit: cover;
+}
+
+.box-div {
+  max-width: 300px;
+  text-align: left;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.box-style-1 {
+  background-color: var(--color-box-style-1);
+}
+
+.box-style-2 {
+  background-color: var(--color-box-style-2);
+}
+
+.box-style-3 {
+  background-color: var(--color-box-style-3);
+}
+
+.box-style-4 {
+  background-color: var(--color-box-style-4);
+}
+
+.box-style-5 {
+  background-color: var(--color-box-style-5);
+}
+
+.box-style-6 {
+  background-color: var(--color-box-style-6);
+}
+
+.box-style-7 {
+  background-color: var(--color-box-style-7);
+}
+
+/*Footer*/
+footer {
+  font-family: var(--main-font);
+  display: grid;
+  justify-content: center;
+  padding: 10px;
+}
+
+footer div {
+  max-width: 170px;
+}
+
+footer p {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.close-p {
+  line-height: 0.2;
+}
+
+.copyright-text {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+input {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px;
+  min-width: 170px;
+}
+
+.cta {
+  padding: 2px 12px;
+}
+
+.cta:hover {
+  background-color: #4ee05d;
+  border: 2px solid #000;
+}
